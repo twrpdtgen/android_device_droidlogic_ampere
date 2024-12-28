@@ -7,6 +7,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),ampere)
+ifeq ($(TARGET_DEVICE),MTC_TV)
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 endif
