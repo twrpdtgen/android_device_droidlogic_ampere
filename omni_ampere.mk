@@ -12,17 +12,18 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, vendor/omni/config/common.mk)
 
 # Inherit from ampere device
-$(call inherit-product, device/droidlogic/ampere/device.mk)
+$(call inherit-product, device/MTC/MTS_TV/device.mk)
 
-PRODUCT_DEVICE := ampere
-PRODUCT_NAME := omni_ampere
-PRODUCT_BRAND := Droidlogic
-PRODUCT_MODEL := ampere
-PRODUCT_MANUFACTURER := droidlogic
+PRODUCT_DEVICE := SDMC_DV8235
+PRODUCT_NAME := twrp_MTS_TV
+PRODUCT_BRAND := MTC
+PRODUCT_MODEL := DV8235
+PRODUCT_MANUFACTURER := SDMC
 
 PRODUCT_GMS_CLIENTID_BASE := android-droidlogic
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="ampere-user 9 PPR1.180610.011 20210514 test-keys"
+    PRIVATE_BUILD_DESC="ampere-user 9 PI 20220302 release-keys"
 
-BUILD_FINGERPRINT := Droidlogic/ampere/ampere:9/PPR1.180610.011/20210514:user/test-keys
+BUILD_FINGERPRINT := MTC/MTS_TV/SDMC_DV8235:9/PI/20220316:user/release-keys
+
