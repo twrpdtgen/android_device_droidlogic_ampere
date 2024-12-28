@@ -5,7 +5,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/droidlogic/ampere
+DEVICE_PATH := device/MTC/MTS_TV
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
@@ -24,7 +24,7 @@ TARGET_USES_64_BIT_BINDER := true
 OVERRIDE_TARGET_FLATTEN_APEX := true
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := ampere
+TARGET_BOOTLOADER_BOARD_NAME := MTC_TV
 TARGET_NO_BOOTLOADER := true
 
 # Display
@@ -42,8 +42,8 @@ BOARD_MKBOOTIMG_ARGS += --ramdisk_offset $(BOARD_RAMDISK_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
 BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_KERNEL_SEPARATED_DTBO := true
-TARGET_KERNEL_CONFIG := ampere_defconfig
-TARGET_KERNEL_SOURCE := kernel/droidlogic/ampere
+TARGET_KERNEL_CONFIG := MTC_TV_defconfig
+TARGET_KERNEL_SOURCE := device/MTC/MTS_TV
 
 # Kernel - prebuilt
 TARGET_FORCE_PREBUILT_KERNEL := true
